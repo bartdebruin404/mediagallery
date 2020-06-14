@@ -130,6 +130,10 @@ _ReSharper*/
 # TeamCity is a build add-in
 _TeamCity*
 
+# Parcel is a application bundler
+dist/
+.cache/
+
 # DotCover is a Code Coverage Tool
 *.dotCover
 
