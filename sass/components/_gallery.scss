@@ -3,7 +3,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
   grid-gap: 2rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 
   @media (min-width: 589px) {
     grid-template-columns: repeat(2, 1fr);
@@ -11,19 +11,26 @@
   @media (min-width: 920px) {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  &__load-more {
+    margin:2rem auto;
+    display: block;
+    &.disabled{
+      background:#aaa;
+      cursor: default;
+    }
+  }
   &__image {
     position: relative;
     cursor: pointer;
-    &::before{
-        content:'';
-        width:50px;
-        height:50px;
-        border-radius: 50%;
-        background-color: #eee;
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #eee;
     }
     &:hover {
-        filter:  url(#monochrome);
+      filter: url(#monochrome);
     }
   }
 }
