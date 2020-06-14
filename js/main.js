@@ -15,11 +15,278 @@ function ready(callbackFunc) {
     }
 }
 
+
+
+
+
 ready(function () {
+    var gallery = new Gallery();
     var modal = new Modal();
 });
 
 
+(function () {
+    // Constructor
+    this.Gallery = function () {
+        this.gallery = document.getElementById('mediaGallery');
+        this.galleryItems = [
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+            {
+                "mediaOriginalFile": "img/mov_bbb.mp4",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "1m34 - 200MB",
+                "linkCaption": "Download video",
+            },
+            {
+                "mediaOriginalFile": "https://www.youtube.com/embed/u5XO_59jQVc",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Video caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": "8m56",
+                "linkCaption": "Ga naar youtube",
+            },
+            {
+                "mediaOriginalFile": "img/1920x950.png",
+                "mediaMobileFile": "img/640x300.png",
+                "mediaTabletFile": "img/916x480.png",
+                "mediaCaption": "Image caption - Lorem ipsum solor sit amet",
+                "mediaAlt": "Uitsnede foto",
+                "mediaData": undefined,
+                "linkCaption": "Download afbeelding",
+            },
+        ];
+
+        this.galleryItems.forEach(item => {
+            this.card = document.createElement('article');
+            this.card.className = 'card gallery__item';
+            this.card.innerHTML = `
+                        <div class="card__media">
+                          <a
+                            href="${item.mediaOriginalFile}"
+                            title="${item.mediaCaption}"
+                            target="_blank"
+                            modal
+                          >
+                            <img
+                              alt="${item.mediaAlt}"
+                              src="${item.mediaTabletFile}"
+                              srcset="${item.mediaMobileFile} 640w, ${item.mediaTabletFile} 916w"
+                              sizes=" 
+                                (min-width: 1366px) 916px, 
+                                (min-width: 1536px) 1030px
+                              "
+                              class="img-responsive gallery__image"
+                            />
+                          </a>
+                        </div>
+                        <div class="card__body">
+                        <p>${item.mediaCaption}</p>
+                        ${item.mediaData ? "<p>"+item.mediaData+"</p>" : ""}
+                        </div>
+                        <div class="card__footer">
+                          <a href="${item.mediaOriginalFile}" download="groot" class="button-link" target="_blank"
+                            >${item.linkCaption}</a
+                          >
+                        </div>
+            `;
+
+
+            this.gallery.appendChild(this.card);
+        })
+    }
+}());
 
 (function () {
     // Constructor
