@@ -3,7 +3,12 @@ $bg-color: rgb(211, 225, 243);
 $highlight-color: rgb(3, 37, 78);
 $icon-color: rgb(39, 119, 243);
 
-@import "../node_modules/skeleton-scss/scss/skeleton.scss";
+@import "base/normalize";
+@import "base/variables";
+@import "base/functions";
+@import "base/base-styles";
+@import "base/utils";
+@import "base/typography";
 
 @import "layout/page";
 @import "layout/section";

@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: none;
   &::before {
     content: "";
     background: rgba(0, 0, 0, 0.85);
@@ -21,9 +22,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &__inner {
+      position: relative;
+    }
+  }
+  &__close {
+    position: absolute;
+    right:-50px;
+    top:0;
+    width:40px;
+    height:40px;
   }
 }
 .modal-open {
+  .modal {
+    display: block;
+  }
   .page {
     filter: blur(3px);
   }
