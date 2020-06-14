@@ -14,12 +14,62 @@
     <meta property="og:url" content="media-gallery.bartdebruin.nl" />
     <meta property="og:image" content="https://via.placeholder.com/700x400" />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/all.css" />
-
   </head>
 
   <body>
-    <main></main>
+    <main class="page">
+      <header>
+        <h1>Media Gallery</h1>
+        <p>
+          Every page deserves an intro. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Aenean quis urna sed erat congue imperdiet. Quisque
+          vitae ex eget mi consectetur tempus. Aliquam euismod nibh id urna
+          vulputate, ut scelerisque velit sollicitudin.
+        </p>
+      </header>
+      <section class="section">
+        <header class="section__title">
+          <h2>The Media Gallery has a header</h2>
+          <p>The Media Gallery also has a subtitle</p>
+        </header>
+        <div class="gallery">
+          <article class="card card--interactive">
+            <div class="card__media">
+              <img
+                alt="alt text image"
+                src="img/916x480.png"
+                srcset="img/640x300.png 640w, img/916x480.png 916w"
+                sizes=" 
+                  (min-width: 1366px) 916px, 
+                  (min-width: 1536px) 1030px
+                "
+                class="img-responsive gallery__image"
+                role="button"
+                aria-label="Bekijk grote versie"
+                aria-pressed="false"
+                tabindex="0"
+              />
+            </div>
+            <div class="card__body">
+              Image caption - Lorem ipsum solor sit amet
+            </div>
+            <div class="card__footer">
+              <a href="img/1920x950.png" download="groot" class="button-link"
+                >Download</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    
 
     <script src="js/main.js"></script>
   </body>

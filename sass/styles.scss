@@ -1,0 +1,17 @@
+$primary-color: rgb(15, 68, 143);
+$bg-color: rgb(211, 225, 243);
+$highlight-color: rgb(3, 37, 78);
+$icon-color: rgb(39, 119, 243);
+
+@import "../node_modules/skeleton-scss/scss/skeleton.scss";
+
+@import "layout/page";
+@import "layout/section";
+
+@import "components/card";
+@import "components/gallery";
+@import "components/img-responsive";
+@import "components/modal";
+
+
+@import "helpers/defs";

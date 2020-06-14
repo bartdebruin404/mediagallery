@@ -1,0 +1,7 @@
+.page{
+    margin:0 auto;
+    width:84vw;
+    @media (min-width: 920px) { 
+        width:70vw;
+     }
+}
