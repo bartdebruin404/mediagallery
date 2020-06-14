@@ -6,13 +6,14 @@
   "license": "",
   "author": "",
   "scripts": {
-    "build": "gulp sass && gulp img && parcel build index.html",
-    "dev": "gulp sass && && gulp img parcel index.html --open",
+    "build": "gulp clean-dist && gulp sass && gulp scripts && gulp img && parcel build index.html",
+    "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "node-sass": "^4.14.1",
