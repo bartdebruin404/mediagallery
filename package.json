@@ -6,8 +6,8 @@
   "license": "",
   "author": "",
   "scripts": {
-    "build": "gulp sass && parcel build index.html",
-    "dev": "gulp sass && parcel index.html --open",
+    "build": "gulp sass && gulp img && parcel build index.html",
+    "dev": "gulp sass && && gulp img parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

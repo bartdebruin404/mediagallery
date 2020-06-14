@@ -131,7 +131,6 @@ _ReSharper*/
 _TeamCity*
 
 # Parcel is a application bundler
-dist/
 .cache/
 
 # DotCover is a Code Coverage Tool

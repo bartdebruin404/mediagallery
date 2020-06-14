@@ -413,17 +413,12 @@ hr {
 
 .banner {
   background: #d3e1f3;
-  margin-bottom: 2rem;
-  margin-left: calc(-100vw / 2 + 84vw / 2);
-  margin-right: calc(-100vw / 2 + 84vw / 2); }
+  margin-bottom: 2rem; }
   .banner__inner {
     padding: 5rem 2rem; }
   @media (min-width: 750px) {
-    .banner {
-      margin-left: calc(-100vw / 2 + 70vw / 2);
-      margin-right: calc(-100vw / 2 + 70vw / 2); }
-      .banner__inner {
-        padding-right: 40%; } }
+    .banner__inner {
+      padding-right: 40%; } }
 
 .card {
   display: flex;
