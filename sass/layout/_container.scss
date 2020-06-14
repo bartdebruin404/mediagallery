@@ -1,0 +1,7 @@
+.container {
+  margin: 0 auto;
+  width: 84vw;
+  @media (#{$bp-larger-than-tablet}) {
+    width: 70vw;
+  }
+}

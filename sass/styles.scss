@@ -1,22 +1,14 @@
-$primary-color: rgb(15, 68, 143);
-$bg-color: rgb(211, 225, 243);
-$highlight-color: rgb(3, 37, 78);
-$icon-color: rgb(39, 119, 243);
+
 
 @import "base/normalize";
 @import "base/variables";
-@import "base/functions";
-@import "base/base-styles";
 @import "base/utils";
 @import "base/typography";
 
-@import "layout/page";
+@import "layout/container";
 @import "layout/section";
 
+@import "components/banner";
 @import "components/card";
 @import "components/gallery";
-@import "components/img-responsive";
 @import "components/modal";
-
-
-@import "helpers/defs";

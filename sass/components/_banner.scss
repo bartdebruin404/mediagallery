@@ -1,0 +1,16 @@
+.banner {
+  background: $bg-color;
+  margin-bottom: 2rem;
+  margin-left: calc(-100vw / 2 + 84vw / 2);
+  margin-right: calc(-100vw / 2 + 84vw / 2);
+  &__inner {
+    padding: 5rem 2rem;
+  }
+  @media (#{$bp-larger-than-tablet}) {
+    margin-left: calc(-100vw / 2 + 70vw / 2);
+    margin-right: calc(-100vw / 2 + 70vw / 2);
+    &__inner {
+      padding-right: 40%;
+    }
+  }
+}
