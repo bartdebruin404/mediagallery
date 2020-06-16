@@ -34,6 +34,9 @@ function removeClass(el, className) {
 ready(function () {
     var gallery = new Gallery();
     var modal = new Modal();
+
+
+
 });
 
 const globalGalleryItems = [

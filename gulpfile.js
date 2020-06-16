@@ -23,9 +23,11 @@ gulp.task("img", function () {
     .src("./img/**/*.*")
     .pipe(gulp.dest("./dist/img"));
 });
+
 gulp.task("scripts", function () {
     return gulp
       .src("./scripts/**/*.*")
+      .pipe(concat("main.js")) // concat the stream output in single file
       .pipe(gulp.dest("./js"));
   });
 

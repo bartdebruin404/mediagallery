@@ -26,7 +26,7 @@ function hassClass(el, className) {
 }
 function addClass(el, className) {
     el.classList.add(className);
-}
+} 
 function removeClass(el, className) {
     el.classList.remove(className);
 }
@@ -34,6 +34,9 @@ function removeClass(el, className) {
 ready(function () {
     var gallery = new Gallery();
     var modal = new Modal();
+
+
+
 });
 
 const globalGalleryItems = [

@@ -1,9 +1,47 @@
 .button {
-  background:$icon-color;
+  background: $icon-color;
   border: 0;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   font-size: 30px;
   line-height: 40px;
   vertical-align: middle;
+}
+
+.button-link {
+  display: inline-block;
+  position: relative;
+  color: $icon-color;
+  text-decoration: none;
+  padding: 0.2em 0.05em;
+  border-bottom: 2px solid #333333;
+
+  &:hover {
+    color: $highlight-color;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #333333;
+    z-index: -1;
+    transition: all 0.1s cubic-bezier(0, 0.59, 1, 0.26);
+  }
+
+  &:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #333333;
+    z-index: -1;
+  }
 }
